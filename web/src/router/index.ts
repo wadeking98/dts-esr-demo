@@ -7,7 +7,10 @@ import PreRegister from "@/views/PreRegister.vue";
 import ManageOrg from "@/views/ManageOrg.vue";
 import RegisterOrg from "@/views/RegisterOrg.vue";
 import RegisterEmployees from "@/views/RegisterEmployees.vue";
+import UpdateEmployee from "@/views/UpdateEmployee.vue";
 import UpdateOrg from "@/views/UpdateOrg.vue";
+import UpdateOrgEmployee from "@/views/UpdateOrgEmployee.vue";
+import AddEmployee from "@/views/AddEmployee.vue";
 import Unauthorized from "@/views/Unauthorized.vue";
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
@@ -68,6 +71,33 @@ function router(config: AppConfig): VueRouter {
       path: "/employees",
       name: "Manage Employees",
       component: RegisterEmployees,
+      meta: {
+        isPublic: true
+      }
+      // beforeEnter: validToken
+    },
+    {
+      path: "/employee",
+      name: "Employee Details",
+      component: UpdateEmployee,
+      meta: {
+        isPublic: true
+      }
+      // beforeEnter: validToken
+    },
+    {
+      path: "/org-employee",
+      name: "Employee Details",
+      component: UpdateOrgEmployee,
+      meta: {
+        isPublic: true
+      }
+      // beforeEnter: validToken
+    },
+    {
+      path: "/add-employee",
+      name: "Add Employee",
+      component: AddEmployee,
       meta: {
         isPublic: true
       }

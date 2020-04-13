@@ -28,16 +28,27 @@
         <v-toolbar dense flat class="mb-3">
           <v-toolbar-title>Services Offered</v-toolbar-title>
         </v-toolbar>
-        <v-skeleton-loader
-          boilerplate
-          type="sentences"
-          class="my-2"
-        ></v-skeleton-loader>
+
+        <v-row align="center" justify="start">
+          <v-col v-if="!record.services.length">
+            <v-alert type="info" class="mb-0">No services added</v-alert>
+          </v-col>
+          <v-col
+            v-for="service in record.services"
+            :key="service.id"
+            class="shrink"
+          >
+            <v-chip>
+              <v-icon left v-text="service.icon"></v-icon>
+              {{ service.name }}
+            </v-chip>
+          </v-col>
+        </v-row>
 
         <v-toolbar dense flat class="mb-3">
           <v-toolbar-title>Registered Employees</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn color="primary">Add Employee</v-btn>
+          <v-btn color="primary" to="/add-employee">Add Employee</v-btn>
         </v-toolbar>
 
         <employees-table></employees-table>
@@ -63,7 +74,19 @@ export default class ManageOrg extends Vue {
     id: "1",
     sourceId: "BC989125",
     name: "John's Cleaners",
-    status: "Essential"
+    status: "Essential",
+    services: [
+      {
+        id: "1",
+        name: "Medical Facility",
+        icon: "mdi-medical-bag"
+      },
+      {
+        id: "2",
+        name: "Cleaning",
+        icon: "mdi-broom"
+      }
+    ]
   };
 
   created() {
