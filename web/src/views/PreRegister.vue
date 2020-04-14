@@ -22,6 +22,9 @@
                     boilerplate
                     type="sentences"
                   ></v-skeleton-loader>
+                  <v-btn href="https://github.com/bcgov/identity-kit-poc/blob/master/docs/GettingApp.md" target="_blank" color="primary" class="my-2"
+                    >Instructions</v-btn
+                  >
                 </v-expansion-panel-content>
               </div>
             </div>
@@ -40,6 +43,10 @@
                     boilerplate
                     type="paragraph"
                   ></v-skeleton-loader>
+                  <p>Although for this demo, you should <b>skip this step</b>, the link to the instructions is live and can be used.</p>
+                  <v-btn href="https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card/login-with-card/mobile-card/download-bcsc-app" target="_blank" color="primary" class="my-2"
+                    >Instructions</v-btn
+                  >
                 </v-expansion-panel-content>
               </div>
             </div>
@@ -59,6 +66,12 @@
                     boilerplate
                     type="sentences"
                   ></v-skeleton-loader>
+                  <p>For this demo get the <b>Unverified Person</b>. The "Verified Person" link is a limited access service requiring you have both an invitation to the program and an activated BC Gov Services Card App</p>
+                  <v-btn href="https://openvp-issuer-dev.pathfinder.gov.bc.ca/" target="_blank" color="primary" class="my-2"
+                    >Unverified Person</v-btn
+                  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<v-btn href="https://identity-kit.pathfinder.gov.bc.ca/" target="_blank" color="tertiary" class="my-2"
+                    >Verified Person</v-btn
+                  >
                 </v-expansion-panel-content>
               </div>
             </div>
