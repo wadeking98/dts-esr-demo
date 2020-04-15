@@ -3,7 +3,7 @@
     <v-row>
       <v-col>
         <h1 class="my-4 display-1">
-          Welcome to the BC Essential Services Registry
+          Welcome to the BC Essential Services Gateway
         </h1>
         <p class="title">
           Getting started? Use the links below. If you are returning to the
