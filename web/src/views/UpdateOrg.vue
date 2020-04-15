@@ -31,7 +31,9 @@
 
         <v-row align="center" justify="start">
           <v-col v-if="!record.services.length">
-            <v-alert type="info" class="mb-0">No services added</v-alert>
+            <v-alert color="primary" class="mb-0" text icon="mdi-information"
+              >No services added</v-alert
+            >
           </v-col>
           <v-col
             v-for="service in record.services"

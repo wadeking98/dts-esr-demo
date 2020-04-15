@@ -18,11 +18,16 @@
         <v-toolbar dense flat class="mb-3">
           <v-toolbar-title>Find your Organization</v-toolbar-title>
         </v-toolbar>
-        <v-skeleton-loader
-          boilerplate
-          type="sentences"
-          class="mt-2"
-        ></v-skeleton-loader>
+        <v-card outlined class="mb-4 pa-3">
+          <v-autocomplete
+            label="Orgbook Search"
+            placeholder="Start typing to Search"
+            prepend-icon="mdi-office-building"
+            return-object
+            outlined
+            hide-details
+          ></v-autocomplete>
+        </v-card>
 
         <v-toolbar dense flat class="mb-3">
           <v-toolbar-title>Services Offered</v-toolbar-title>
@@ -32,7 +37,13 @@
           <v-card-text class="py-1">
             <v-row align="center" justify="start">
               <v-col v-if="!services.length">
-                <v-alert type="info" class="mb-0">No services added</v-alert>
+                <v-alert
+                  color="primary"
+                  class="mb-0"
+                  text
+                  icon="mdi-information"
+                  >No services added</v-alert
+                >
               </v-col>
               <v-col
                 v-for="(service, i) in services"

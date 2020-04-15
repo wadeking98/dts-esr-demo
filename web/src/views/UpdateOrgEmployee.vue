@@ -35,7 +35,7 @@
           >
         </v-data-table>
 
-        <v-toolbar dense flat class="mb-3">
+        <v-toolbar dense flat class="my-3">
           <v-toolbar-title>Other Credentials</v-toolbar-title>
         </v-toolbar>
 

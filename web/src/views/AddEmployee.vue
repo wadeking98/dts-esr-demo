@@ -21,14 +21,19 @@
         <v-row>
           <v-col md="3" sm="4" class="pt-6">Name</v-col>
           <v-col class="record-value"
-            ><v-text-field filled v-model="record.name"></v-text-field
+            ><v-text-field
+              outlined
+              hide-details
+              v-model="record.name"
+            ></v-text-field
           ></v-col>
         </v-row>
         <v-row>
           <v-col md="3" sm="4" class="pt-6">Email Address</v-col>
           <v-col class="record-value"
             ><v-text-field
-              filled
+              outlined
+              hide-details
               type="email"
               v-model="record.email"
             ></v-text-field
@@ -51,7 +56,7 @@
     </v-row>
     <div style="text-align: right">
       <v-btn to="/update" color="primary" outlined class="mr-2">Cancel</v-btn>
-      <v-btn to="/update" color="primary">Update</v-btn>
+      <v-btn to="/employee-email" color="primary">Send Invitation</v-btn>
     </div>
   </v-container>
 </template>

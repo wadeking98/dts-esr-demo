@@ -32,7 +32,7 @@
           >
         </v-data-table>
 
-        <v-toolbar dense flat class="mb-3">
+        <v-toolbar dense flat class="my-3">
           <v-toolbar-title>Safe Entry Access Authorizations</v-toolbar-title>
           <v-spacer></v-spacer>
           <v-btn color="primary">Add</v-btn>

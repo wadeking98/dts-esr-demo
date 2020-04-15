@@ -10,6 +10,7 @@ import RegisterEmployees from "@/views/RegisterEmployees.vue";
 import UpdateEmployee from "@/views/UpdateEmployee.vue";
 import UpdateOrg from "@/views/UpdateOrg.vue";
 import UpdateOrgEmployee from "@/views/UpdateOrgEmployee.vue";
+import EmployeeEmail from "@/views/EmployeeEmail.vue";
 import AddEmployee from "@/views/AddEmployee.vue";
 import Unauthorized from "@/views/Unauthorized.vue";
 import Vue from "vue";
@@ -98,6 +99,15 @@ function router(config: AppConfig): VueRouter {
       path: "/add-employee",
       name: "Add Employee",
       component: AddEmployee,
+      meta: {
+        isPublic: true
+      }
+      // beforeEnter: validToken
+    },
+    {
+      path: "/employee-email",
+      name: "Employee Email",
+      component: EmployeeEmail,
       meta: {
         isPublic: true
       }
