@@ -47,10 +47,9 @@
                     boilerplate
                     type="paragraph"
                   ></v-skeleton-loader>
-                  <p>
-                    Although for this demo, you should <b>skip this step</b>,
-                    the link to the instructions is live and can be used.
-                  </p>
+                  <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
+                    Please <b>skip this step</b> for this demo. The link is active and goes to the correct information.
+                  </v-alert>
                   <v-btn
                     href="https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card/login-with-card/mobile-card/download-bcsc-app"
                     target="_blank"
@@ -77,14 +76,14 @@
                     boilerplate
                     type="sentences"
                   ></v-skeleton-loader>
-                  <p>
-                    For this demo get the <b>Unverified Person</b>. The
-                    "Verified Person" link is a limited access service requiring
-                    you have both an invitation to the program and an activated
-                    BC Gov Services Card App
-                  </p>
+                  <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
+                    For this demo please use the <b>Unverified Person</b> button. The
+                    "Verified Person" link is for a limited access program requiring
+                    you have both a program invitation and the
+                    BC Gov Services Card App with a digital BC Services Card (from the previous step).
+                  </v-alert>
                   <v-btn
-                    href="https://openvp-issuer-dev.pathfinder.gov.bc.ca/"
+                    href="https://openvp-issuer.pathfinder.gov.bc.ca/"
                     target="_blank"
                     color="primary"
                     class="my-2 mr-2"
@@ -116,8 +115,13 @@
                     boilerplate
                     type="paragraph"
                   ></v-skeleton-loader>
-                  <v-btn to="/manage" color="primary" class="my-2"
-                    >Register your Organization</v-btn
+                  <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
+                    Skipped in this demo but to be added between this screen and the next is a
+                    request for the presentation of the user's <i>Verified Person</i> credential,
+                    providing high assurance authentication.
+                  </v-alert>
+                  <v-btn to="/register" color="primary" class="my-2"
+                    >Register an Organization</v-btn
                   >
                 </v-expansion-panel-content>
               </div>

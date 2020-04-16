@@ -24,7 +24,14 @@
               <span class="fld">Register as an Essential Service Provider</span>
             </p>
             <v-divider class="my-4" />
+            <p>Michelle,</p>
+            <p> This email contains your invitation to be issued verified credentials about your work as an essential services worker in BC.</P>
             <v-skeleton-loader boilerplate />
+              <v-skeleton-loader
+                boilerplate
+                type="paragraph"
+              ></v-skeleton-loader>
+            <p></p>
             <p>
               <span class="hdr2">Requesting Employer:</span>
               <span class="fld">ABC Cleaning, Inc.</span>
@@ -38,13 +45,21 @@
               <span class="fld">Mary Robinson</span>
             </p>
             <br />
-            <p>Get a digital wallet:&nbsp; <a href="#">Instructions</a></p>
+            <p>Please follow these instructions to get all of the elements you need to get your essential worker credentials:</p>
+            <p>Get a digital wallet:&nbsp; <a href="https://github.com/bcgov/identity-kit-poc/blob/master/docs/GettingApp.md"
+                    target="_blank">Instructions</a></p>
+            <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
+              Skip this step as it is not needed for this demo.
             <p>
-              Get your BC Services Card App:&nbsp; <a href="#">Instructions</a>
+              <br>
+              Get your BC Services Card App and digital BC Services Card:&nbsp; <a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card/login-with-card/mobile-card/download-bcsc-app"
+                    target="_blank">Instructions</a>
             </p>
+            </v-alert>
             <p>
-              Get your BC Verified Person Credential:&nbsp;
-              <a href="#">Instructions</a>
+              Get your BC Un-Verified Person Credential:&nbsp;
+              <a href="https://openvp-issuer.pathfinder.gov.bc.ca/"
+                    target="_blank">Instructions</a>
             </p>
             <p>
               Get your BC Essential Services Provider Credential:&nbsp;

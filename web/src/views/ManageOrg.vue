@@ -5,7 +5,8 @@
         <h2 class="my-4 display-1">
           Manage your Organizations
         </h2>
-        <v-skeleton-loader boilerplate type="paragraph"></v-skeleton-loader>
+        <p>Manage your organizations on this page. From here you can add organizations and update information about the organizations you have already added.</p>
+        <!-- v-skeleton-loader boilerplate type="paragraph"></v-skeleton-loader -->
         <br />
         <v-toolbar dense flat class="mb-3">
           <v-toolbar-title>Current Organizations</v-toolbar-title>
