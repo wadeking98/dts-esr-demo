@@ -106,8 +106,33 @@ export default class RegisterOrg extends Vue {
     },
     {
       id: "2",
+      name: "Doctor",
+      icon: "mdi-doctor"
+    },
+    {
+      id: "3",
+      name: "Nurse",
+      icon: "mdi-doctor"
+    },
+    {
+      id: "4",
       name: "Cleaning",
       icon: "mdi-broom"
+    },
+    {
+      id: "5",
+      name: "Sanitation",
+      icon: "mdi-trash-can-outline"
+    },
+    {
+      id: "6",
+      name: "HVAC Repair",
+      icon: "mdi-water-boiler"
+    },
+    {
+      id: "7",
+      name: "IT",
+      icon: "mdi-laptop"
     }
   ];
   private services: Service[] = [];
