@@ -28,14 +28,14 @@
             </div></template
           >
           <template v-slot:item.actions="{}"
-            ><v-btn small outlined>Get Credential</v-btn></template
+            ><v-btn small outlined to="/org-employee">Get Required Credentials</v-btn></template
           >
         </v-data-table>
 
         <v-toolbar dense flat class="my-3">
           <v-toolbar-title>Safe Entry Access Authorizations</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn color="primary">Add</v-btn>
+          <v-btn color="primary" href="https://esr2-issuer.pathfinder.gov.bc.ca/" target="_blank">Add</v-btn>
         </v-toolbar>
 
         <v-data-table
@@ -127,12 +127,6 @@ export default class ManageOrg extends Vue {
       services: ["Medical Facility", "Cleaning"],
       issued: "2020-04-21",
       actions: ["Revoke", "Reissue"]
-    },
-    {
-      id: "4",
-      facility: "Victoria Villa",
-      services: ["Medical Facility", "Cleaning"],
-      actions: ["Issue"]
     }
   ];
 

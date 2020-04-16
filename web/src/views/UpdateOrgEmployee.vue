@@ -3,10 +3,10 @@
     <v-row>
       <v-col>
         <h2 class="my-4 display-1">
-          {{ record.name }}
+          {{ record.name }} - {{ orgName }}
         </h2>
-        <v-btn to="/update" text
-          ><v-icon>mdi-chevron-left</v-icon> Back to {{ orgName }}</v-btn
+        <v-btn to="/employee" text
+          ><v-icon>mdi-chevron-left</v-icon> Back to my page</v-btn
         >
         <v-skeleton-loader
           boilerplate
@@ -14,29 +14,8 @@
           class="mt-2"
         ></v-skeleton-loader>
         <br />
-
-        <v-toolbar dense flat class="mb-3">
-          <v-toolbar-title>Service Delivery Credential</v-toolbar-title>
-        </v-toolbar>
-
-        <v-data-table
-          :headers="orgHeaders"
-          :items="organizations"
-          :items-per-page="10"
-          class="elevation-1"
-        >
-          <template v-slot:item.services="{ value }"
-            ><div v-for="(svc, idx) of value" :key="idx">
-              {{ svc }}
-            </div></template
-          >
-          <template v-slot:item.actions="{}"
-            ><v-btn small outlined>Issue</v-btn></template
-          >
-        </v-data-table>
-
         <v-toolbar dense flat class="my-3">
-          <v-toolbar-title>Other Credentials</v-toolbar-title>
+          <v-toolbar-title>Get Credentials From Other Issuers</v-toolbar-title>
         </v-toolbar>
 
         <v-data-table
@@ -50,7 +29,7 @@
           </template>
 
           <template v-slot:item.issuer="{ value }"
-            ><a :href="value.href">{{ value.name }}</a>
+            ><a :href="value.href" target="_blank">{{ value.name }}</a>
           </template>
         </v-data-table>
       </v-col>
@@ -104,7 +83,7 @@ export default class ManageOrg extends Vue {
         "Needed in order to get a COVID-19 test.",
         "Must have a Service Provider from an essential service."
       ],
-      issuer: { name: "BC Ministry of Health", href: "#" }
+      issuer: { name: "BC Ministry of Health", href: "https://healthbc-issuer.pathfinder.gov.bc.ca/" }
     },
     {
       id: "2",
@@ -113,7 +92,7 @@ export default class ManageOrg extends Vue {
         "Needed for gaining access to some facilities.",
         "Must have a PHN Credential."
       ],
-      issuer: { name: "MedLab Web", href: "#" }
+      issuer: { name: "MedLab Web", href: "https://medlab-issuer.pathfinder.gov.bc.ca/" }
     }
   ];
 

@@ -45,7 +45,7 @@
               <span class="fld">Mary Robinson</span>
             </p>
             <br />
-            <p>Please follow these instructions to get all of the elements you need to get your essential worker credentials:</p>
+            <p>Please follow these steps to get what you need to receive and use your essential worker credentials:</p>
             <p>Get a digital wallet:&nbsp; <a href="https://github.com/bcgov/identity-kit-poc/blob/master/docs/GettingApp.md"
                     target="_blank">Instructions</a></p>
             <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
