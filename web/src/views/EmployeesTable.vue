@@ -29,7 +29,7 @@ interface ExtEmployee extends Employee {
 const demoServices: Service[] = [
   {
     id: "1",
-    name: "Medical Facility",
+    name: "Medical Facility Services",
     icon: "mdi-medical-bag"
   },
   {

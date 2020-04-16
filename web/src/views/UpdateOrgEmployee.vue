@@ -64,7 +64,7 @@ export default class ManageOrg extends Vue {
     {
       id: "1",
       name: "ABC Cleaners, Inc.",
-      services: ["Medical Facility", "Cleaning"],
+      services: ["Medical Facility Services", "Cleaning"],
       actions: ["issue"]
     }
   ];
@@ -81,7 +81,7 @@ export default class ManageOrg extends Vue {
       name: "BC Personal Health Number",
       reason: [
         "Needed in order to get a COVID-19 test.",
-        "Must have a Service Provider from an essential service."
+        "Must have your verified person credential."
       ],
       issuer: { name: "BC Ministry of Health", href: "https://healthbc-issuer.pathfinder.gov.bc.ca/" }
     },

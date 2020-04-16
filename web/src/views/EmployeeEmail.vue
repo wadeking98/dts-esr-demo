@@ -21,11 +21,11 @@
             </p>
             <p>
               <span class="hdr">Subject:</span>
-              <span class="fld">Register as an Essential Service Provider</span>
+              <span class="fld">Invitation to get your Essential Service Provider credentials</span>
             </p>
             <v-divider class="my-4" />
             <p>Michelle,</p>
-            <p> This email contains your invitation to be issued verified credentials about your work as an essential services worker in BC.</P>
+            <p> This email contains your invitation to be issued digital credentials about your work as an essential services worker in BC.</P>
             <v-skeleton-loader boilerplate />
               <v-skeleton-loader
                 boilerplate
@@ -38,7 +38,7 @@
             </p>
             <p>
               <span class="hdr2">Services Provided:</span>
-              <span class="fld">Medical Facility Cleaning Service</span>
+              <span class="fld">Medical Facility Services, Cleaning</span>
             </p>
             <p>
               <span class="hdr2">Requesting Person:</span>
@@ -63,7 +63,7 @@
             </p>
             <p>
               Get your BC Essential Services Provider Credential:&nbsp;
-              <router-link to="/employee"><b>Link to Register</b></router-link>
+              <router-link to="/employee">Accept Invitation</router-link>
             </p>
           </v-card-text>
         </v-card>

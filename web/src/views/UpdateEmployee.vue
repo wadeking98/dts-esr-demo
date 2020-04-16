@@ -33,7 +33,7 @@
         </v-data-table>
 
         <v-toolbar dense flat class="my-3">
-          <v-toolbar-title>Safe Entry Access Authorizations</v-toolbar-title>
+          <v-toolbar-title>Essential Service Authorizations</v-toolbar-title>
           <v-spacer></v-spacer>
           <v-btn color="primary" href="https://esr2-issuer.pathfinder.gov.bc.ca/" target="_blank">Add</v-btn>
         </v-toolbar>
@@ -91,7 +91,7 @@ export default class ManageOrg extends Vue {
     {
       id: "1",
       name: "ABC Cleaners, Inc.",
-      services: ["Medical Facility", "Cleaning"],
+      services: ["Medical Facility Services", "Cleaning"],
       actions: ["issue"]
     }
   ];
@@ -108,7 +108,7 @@ export default class ManageOrg extends Vue {
     {
       id: "1",
       facility: "Johnson Street Extended Care",
-      services: ["Medical Facility", "Cleaning"],
+      services: ["Medical Facility Services", "Cleaning"],
       issued: "2020-04-15",
       expiry: "2020-06-14",
       actions: ["Revoke", "Reissue"]
@@ -116,7 +116,7 @@ export default class ManageOrg extends Vue {
     {
       id: "2",
       facility: "The Kensington",
-      services: ["Medical Facility", "Cleaning"],
+      services: ["Medical Facility Services", "Cleaning"],
       issued: "2020-05-08",
       expiry: "2020-07-07",
       actions: ["Revoke", "Reissue"]
@@ -124,7 +124,7 @@ export default class ManageOrg extends Vue {
     {
       id: "3",
       facility: "Robertson Manor",
-      services: ["Medical Facility", "Cleaning"],
+      services: ["Medical Facility Services", "Cleaning"],
       issued: "2020-04-21",
       actions: ["Revoke", "Reissue"]
     }
