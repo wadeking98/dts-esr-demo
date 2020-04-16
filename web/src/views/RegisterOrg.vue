@@ -18,6 +18,11 @@
         <v-toolbar dense flat class="mb-3">
           <v-toolbar-title>Find your Organization</v-toolbar-title>
         </v-toolbar>
+        <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
+          This search mechanism will use an OrgBook API to support owners/directors in finding the legal name of their organization.
+          Fully implemented, this section will integrate with BC Registries to verify a connection between the user and their
+          essential service organization.
+        </v-alert>
         <v-card outlined class="mb-4 pa-3">
           <v-autocomplete
             label="Orgbook Search"

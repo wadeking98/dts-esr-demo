@@ -11,7 +11,7 @@
       </div></template
     >
     <template v-slot:item.actions="{}"
-      ><v-btn small outlined to="/org-employee">Update</v-btn></template
+      ><v-btn small outlined to="/add-employee">Update</v-btn></template
     >
   </v-data-table>
 </template>

@@ -3,9 +3,9 @@
     <v-row>
       <v-col>
         <h2 class="my-4 display-1">
-          Add Employee
+          Add / Update Employee
         </h2>
-        <v-btn to="/manage" text
+        <v-btn to="/update" text
           ><v-icon>mdi-chevron-left</v-icon> Back to {{ orgName }}</v-btn
         >
         <v-skeleton-loader
