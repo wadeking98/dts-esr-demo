@@ -80,13 +80,38 @@ export default class ManageOrg extends Vue {
     services: [
       {
         id: "1",
-        name: "Medical Facility",
+        name: "Medical Facility Services",
         icon: "mdi-medical-bag"
       },
       {
         id: "2",
+        name: "Doctor",
+        icon: "mdi-doctor"
+      },
+      {
+        id: "1",
+        name: "Nurse",
+        icon: "mdi-doctor"
+      },
+      {
+        id: "1",
         name: "Cleaning",
         icon: "mdi-broom"
+      },
+      {
+        id: "1",
+        name: "Sanitation",
+        icon: "mdi-trash-can-outline"
+      },
+      {
+        id: "1",
+        name: "HVAC Repair",
+        icon: "mdi-water-boiler"
+      },
+      {
+        id: "2",
+        name: "IT",
+        icon: "mdi-laptop"
       }
     ]
   };

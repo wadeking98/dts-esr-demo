@@ -82,28 +82,28 @@ export default class ManageOrg extends Vue {
       id: "1",
       name: "Michelle Sanches",
       email: "michelle.sanches@abccleaners.ca",
-      services: ["Medical Facility", "Cleaning"],
+      services: ["Medical Facility Services", "Cleaning"],
       actions: ["update"]
     },
     {
       id: "2",
       name: "Mary Lasater",
       email: "mary.laster@abccleaners.ca",
-      services: ["Medical Facility", "Cleaning"],
+      services: ["Medical Facility Services", "Cleaning"],
       actions: ["update"]
     },
     {
       id: "3",
       name: "Susan Zimmerman",
       email: "susan.zimmerman@abccleaners.ca",
-      services: ["Medical Facility", "Cleaning"],
+      services: ["Medical Facility Services", "Cleaning"],
       actions: ["update"]
     },
     {
       id: "4",
       name: "Robert Morgan",
       email: "robert.morgan@abccleaners.ca",
-      services: ["Medical Facility", "Cleaning"],
+      services: ["Medical Facility Services", "Cleaning"],
       actions: ["update"]
     }
   ];

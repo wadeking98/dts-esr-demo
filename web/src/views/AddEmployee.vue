@@ -81,7 +81,7 @@ export default class ManageOrg extends Vue {
   private serviceOptions: Service[] = [
     {
       id: "1",
-      name: "Medical Facility",
+      name: "Medical Facility Services",
       icon: "mdi-medical-bag"
     },
     {
