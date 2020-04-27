@@ -48,7 +48,7 @@
                     type="sentences"
                   ></v-skeleton-loader>
                   <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
-                    For this demo please click use the <b>Unverified Person</b> button to get
+                    For this demo please use the <b>Unverified Person</b> button to get
                     a (very) unofficial credential. The
                     "Verified Person" link is for a limited access program that allows
                     invited participants to get a true "Verified Person" credential based
