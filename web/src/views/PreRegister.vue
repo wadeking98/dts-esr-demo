@@ -48,10 +48,11 @@
                     type="sentences"
                   ></v-skeleton-loader>
                   <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
-                    For this demo please click on and use the <b>Unverified Person</b> button. The
-                    "Verified Person" link is for a limited access program requiring
-                    you have both a program invitation and the
-                    BC Gov Services Card App with a digital BC Services Card.
+                    For this demo please click use the <b>Unverified Person</b> button to get
+                    a (very) unofficial credential. The
+                    "Verified Person" link is for a limited access program that allows
+                    invited participants to get a true "Verified Person" credential based
+                    on data from the digital version of their BC Services Card.
                   </v-alert>
                   <v-btn
                     href="https://openvp-issuer.pathfinder.gov.bc.ca/"
@@ -78,7 +79,7 @@
                 <v-expansion-panel-header
                   ><h3>
                     Register your Company/Organization as an Essential
-                    Service
+                    Services Provider
                   </h3></v-expansion-panel-header
                 >
                 <v-expansion-panel-content>
@@ -88,7 +89,7 @@
                   ></v-skeleton-loader>
                   <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
                     Skipped in this demo but to be added between this screen and the next is a
-                    request for the presentation of the user's <i>(un)Verified Person</i> credential,
+                    request for the presentation of the user's <i>Verified Person</i> credential,
                     providing high assurance authentication.
                   </v-alert>
                   <v-btn to="/register" color="primary" class="my-2"

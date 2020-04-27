@@ -25,7 +25,7 @@
             </p>
             <v-divider class="my-4" />
             <p>Michelle,</p>
-            <p> This email contains your invitation to be issued digital credentials about your work as an essential services worker in BC.</P>
+            <p> This email contains your invitation to be issued digital credentials about your work as an essential services provider in BC.</P>
             <v-skeleton-loader boilerplate />
               <v-skeleton-loader
                 boilerplate
