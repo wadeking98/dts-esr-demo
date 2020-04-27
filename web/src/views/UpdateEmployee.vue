@@ -28,7 +28,20 @@
             </div></template
           >
           <template v-slot:item.actions="{}"
-            ><v-btn small outlined to="/org-employee">Get Required Credentials</v-btn></template
+            ><v-btn
+              x-small outlined
+              class="mr-2"
+              href="https://esr1-issuer.pathfinder.gov.bc.ca/"
+              target="_blank"
+              >Essential Service
+            </v-btn
+            ><v-btn
+              x-small outlined
+              class="mr-2"
+              to="/org-employee"
+              >From Other Issuers
+            </v-btn>
+          </template
           >
         </v-data-table>
 
@@ -51,7 +64,7 @@
           >
           <template v-slot:item.actions="{ value }"
             ><v-btn
-              small
+              x-small
               outlined
               class="mr-2"
               v-for="act of value"
@@ -84,7 +97,7 @@ export default class ManageOrg extends Vue {
       sortable: false,
       width: "30%"
     },
-    { text: "Actions", value: "actions", sortable: false }
+    { text: "Get Credentials", value: "actions", sortable: false }
   ];
 
   private organizations = [

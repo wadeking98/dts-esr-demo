@@ -45,26 +45,21 @@
               <span class="fld">Mary Robinson</span>
             </p>
             <br />
-            <p>Please follow these steps to get what you need to receive and use your essential worker credentials:</p>
-            <p>Get a digital wallet:&nbsp; <a href="https://github.com/bcgov/identity-kit-poc/blob/master/docs/GettingApp.md"
-                    target="_blank">Instructions</a></p>
-            <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
-              Skip this step as it is not needed for this demo.
-            <p>
-              <br>
-              Get your BC Services Card App and digital BC Services Card:&nbsp; <a href="https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card/login-with-card/mobile-card/download-bcsc-app"
-                    target="_blank">Instructions</a>
-            </p>
-            </v-alert>
-            <p>
-              Get your BC Un-Verified Person Credential:&nbsp;
-              <a href="https://openvp-issuer.pathfinder.gov.bc.ca/"
-                    target="_blank">Instructions</a>
-            </p>
-            <p>
-              Get your BC Essential Services Provider Credential:&nbsp;
-              <router-link to="/employee">Accept Invitation</router-link>
-            </p>
+            <p>Please complete these steps to get what you need to receive and use your essential worker credentials:</p>
+            <ul>
+              <li>Follow these <a href="https://github.com/bcgov/identity-kit-poc/blob/master/docs/GettingApp.md"
+                  target="_blank">instructions</a> to get a digital wallet to hold and use your credentials.
+              </li>
+              <li>
+                &nbsp;&nbsp;&nbsp;Get your BC 
+                <a href="https://openvp-issuer.pathfinder.gov.bc.ca/"
+                      target="_blank">(un)Verified Person</a> Credential.
+              </li>
+              <li>
+                &nbsp;&nbsp;&nbsp;Get your BC Essential Services Provider Credentials by
+                <router-link to="/employee">accepting this Invitation</router-link>.
+              </li>
+            </ul>
           </v-card-text>
         </v-card>
       </v-col>

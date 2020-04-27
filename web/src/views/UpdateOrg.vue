@@ -50,7 +50,8 @@
         <v-toolbar dense flat class="mb-3">
           <v-toolbar-title>Registered Employees</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn color="primary" to="/add-employee">Add Employee</v-btn>
+          <v-btn class="ma-2" color="primary" to="#">Add Employees</v-btn>
+          <v-btn class="ma-2" color="primary" to="/add-employee">Add Employee</v-btn>
         </v-toolbar>
 
         <employees-table></employees-table>
@@ -67,7 +68,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { Organization } from "@/models/organization";
+import { Organization } from "../models/organization";
 import EmployeesTable from "./EmployeesTable.vue";
 
 @Component({ components: { EmployeesTable } })

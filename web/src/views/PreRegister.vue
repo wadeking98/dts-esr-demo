@@ -39,36 +39,7 @@
               <div class="num-body">
                 <v-expansion-panel-header
                   ><h3>
-                    Get the Mobile Services App and Card
-                  </h3></v-expansion-panel-header
-                >
-                <v-expansion-panel-content>
-                  <v-skeleton-loader
-                    boilerplate
-                    type="paragraph"
-                  ></v-skeleton-loader>
-                  <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
-                    Please <b>skip this step</b> for this demo. The link is active and goes to the correct information.
-                  </v-alert>
-                  <v-btn
-                    href="https://www2.gov.bc.ca/gov/content/governments/government-id/bc-services-card/login-with-card/mobile-card/download-bcsc-app"
-                    target="_blank"
-                    color="primary"
-                    class="my-2"
-                    >Instructions</v-btn
-                  >
-                </v-expansion-panel-content>
-              </div>
-            </div>
-          </v-expansion-panel>
-          <v-expansion-panel>
-            <div class="num-row">
-              <div class="number">3</div>
-              <div class="num-body">
-                <v-expansion-panel-header
-                  ><h3>
-                    Get the Verified Person Credential using your Mobile
-                    Services Card
+                    Get a Government-Issued "Verified Person" Credential
                   </h3></v-expansion-panel-header
                 >
                 <v-expansion-panel-content>
@@ -77,10 +48,10 @@
                     type="sentences"
                   ></v-skeleton-loader>
                   <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
-                    For this demo please use the <b>Unverified Person</b> button. The
+                    For this demo please click on and use the <b>Unverified Person</b> button. The
                     "Verified Person" link is for a limited access program requiring
                     you have both a program invitation and the
-                    BC Gov Services Card App with a digital BC Services Card (from the previous step).
+                    BC Gov Services Card App with a digital BC Services Card.
                   </v-alert>
                   <v-btn
                     href="https://openvp-issuer.pathfinder.gov.bc.ca/"
@@ -102,11 +73,11 @@
           </v-expansion-panel>
           <v-expansion-panel>
             <div class="num-row">
-              <div class="number">4</div>
+              <div class="number">3</div>
               <div class="num-body">
                 <v-expansion-panel-header
                   ><h3>
-                    Register your Company/Organization as an BC Essential
+                    Register your Company/Organization as an Essential
                     Service
                   </h3></v-expansion-panel-header
                 >
@@ -117,7 +88,7 @@
                   ></v-skeleton-loader>
                   <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
                     Skipped in this demo but to be added between this screen and the next is a
-                    request for the presentation of the user's <i>Verified Person</i> credential,
+                    request for the presentation of the user's <i>(un)Verified Person</i> credential,
                     providing high assurance authentication.
                   </v-alert>
                   <v-btn to="/register" color="primary" class="my-2"
