@@ -94,7 +94,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { Service } from "@/models/organization";
+import { Service } from "../models/organization";
 
 @Component({})
 export default class RegisterOrg extends Vue {
