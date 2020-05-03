@@ -1,0 +1,97 @@
+<template>
+  <v-autocomplete
+    label="Orgbook Search"
+    placeholder="Start typing to Search"
+    prepend-icon="mdi-office-building"
+    return-object
+    outlined
+    hide-details
+    v-model="model"
+    :rules="rules"
+    :items="items"
+    :loading="isLoading"
+    :search-input.sync="search"
+    v-on:change="change"
+    clearable
+    hide-no-data
+    hide-selected
+    append-icon
+  ></v-autocomplete>
+</template>
+
+<script>
+import Vue from "vue";
+
+export default {
+  name: "OrgBookSearch",
+  props: {
+    fieldModel: String,
+    fieldRules: Array
+  },
+  data() {
+    return {
+      isLoading: false,
+      entries: [],
+      search: null,
+      model: this.fieldModel,
+      rules: this.fieldRules
+    };
+  },
+  computed: {
+    items() {
+      return this.entries.map(entry => {
+        // there will only ever be 1 result in the names array
+        return Object.assign({
+          text: entry.names[0].text,
+          value: entry.names[0].text
+        });
+      });
+    },
+    apiURL() {
+      if (Vue.prototype.$config) {
+        const config = Vue.prototype.$config;
+        return config.orgbook.endpoint;
+      } else {
+        throw new Error("Configuration object is missing.");
+      }
+    }
+  },
+  methods: {
+    change: function(value) {
+      this.$emit(
+        "update:field-model",
+        // For this use, want to emit just the text
+        typeof value === "object" && value !== null ? value.text : value
+      );
+    }
+  },
+  watch: {
+    search(val) {
+      // Minimum search length is 1 character
+      if (!val || val.length < 1) return;
+
+      // A search has already been started
+      if (this.isLoading) return;
+
+      this.isLoading = true;
+
+      // Lazily load results
+      fetch(
+        `https://orgbook.gov.bc.ca/api/v2/search/autocomplete?q=${encodeURIComponent(
+          val
+        )}`
+      )
+        .then(res => res.json())
+        .then(res => {
+          this.count = res.results.length;
+          this.entries = res.results;
+        })
+        .catch(err => {
+          // eslint-disable-next-line
+          console.log(err);
+        })
+        .finally(() => (this.isLoading = false));
+    }
+  }
+};
+</script>
