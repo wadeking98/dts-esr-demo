@@ -21,10 +21,12 @@
       ]
     },
     "lib": [
+      "es2018",
       "esnext",
       "dom",
       "dom.iterable",
       "scripthost"
+      
     ]
   },
   "include": [

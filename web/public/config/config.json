@@ -21,6 +21,9 @@
   "apiServer": {
     "url": "http://localhost:5000"
   },
+  "orgBook": {
+    "endpoint": "https://orgbook.gov.bc.ca/api"
+  },
   "issuedSuccess": {
     "successText": "To try out your new credential:",
     "links": [
