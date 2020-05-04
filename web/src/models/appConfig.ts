@@ -19,6 +19,9 @@ export interface AppConfig {
       post_logout_redirect_uri: string;
     };
   };
+  orgBook: {
+    endpoint: string;
+  };
   apiServer: {
     url: string;
   };

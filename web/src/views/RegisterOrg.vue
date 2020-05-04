@@ -18,20 +18,11 @@
         <v-toolbar dense flat class="mb-3">
           <v-toolbar-title>Find your Organization</v-toolbar-title>
         </v-toolbar>
-        <v-alert text border="left" color="secondary darken-1" icon="mdi-flag">
-          This search mechanism will use an OrgBook API to support owners/directors in finding the legal name of their organization.
-          Fully implemented, this section will integrate with BC Registries to verify a connection between the user and their
-          essential service organization.
-        </v-alert>
         <v-card outlined class="mb-4 pa-3">
-          <v-autocomplete
-            label="Orgbook Search"
-            placeholder="Start typing to Search"
-            prepend-icon="mdi-office-building"
-            return-object
-            outlined
-            hide-details
-          ></v-autocomplete>
+          <OrgBookSearch
+            :field-model.sync="orgName"
+            :field-rules="orgNameRules"
+          />
         </v-card>
 
         <v-toolbar dense flat class="mb-3">
@@ -95,8 +86,13 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import { Service } from "../models/organization";
+import OrgBookSearch from "../components/OrgBookSearch.vue";
 
-@Component({})
+@Component({
+  components: {
+    OrgBookSearch
+  }
+})
 export default class RegisterOrg extends Vue {
   private serviceOptions: Service[] = [
     {
@@ -146,6 +142,9 @@ export default class RegisterOrg extends Vue {
   }
 
   private allSelected = false;
+
+  private orgName = "";
+  private orgNameRules = [];
 
   created() {
     //
