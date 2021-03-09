@@ -52,7 +52,7 @@
               </li>
               <li>
                 &nbsp;&nbsp;&nbsp;Get your BC 
-                <a href="https://openvp-issuer.pathfinder.gov.bc.ca/"
+                <a href="https://openvp-issuer.apps.silver.devops.gov.bc.ca/"
                       target="_blank">(un)Verified Person</a> Credential.
               </li>
               <li>

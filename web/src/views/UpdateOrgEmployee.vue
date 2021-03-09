@@ -83,7 +83,7 @@ export default class ManageOrg extends Vue {
         "Needed in order to get a COVID-19 test.",
         "Must have your verified person credential."
       ],
-      issuer: { name: "BC Ministry of Health", href: "https://healthbc-issuer.pathfinder.gov.bc.ca/" }
+      issuer: { name: "BC Ministry of Health", href: "https://healthbc-issuer.apps.silver.devops.gov.bc.ca/" }
     },
     {
       id: "2",
@@ -92,7 +92,7 @@ export default class ManageOrg extends Vue {
         "Needed for gaining access to some facilities.",
         "Must have a PHN Credential."
       ],
-      issuer: { name: "MedLab Web", href: "https://medlab-issuer.pathfinder.gov.bc.ca/" }
+      issuer: { name: "MedLab Web", href: "https://medlab-issuer.apps.silver.devops.gov.bc.ca/" }
     }
   ];
 

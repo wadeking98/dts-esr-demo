@@ -31,7 +31,7 @@
             ><v-btn
               x-small outlined
               class="mr-2"
-              href="https://esr1-issuer.pathfinder.gov.bc.ca/"
+              href="https://esr1-issuer.apps.silver.devops.gov.bc.ca/"
               target="_blank"
               >Essential Service
             </v-btn
@@ -48,7 +48,7 @@
         <v-toolbar dense flat class="my-3">
           <v-toolbar-title>Essential Service Authorizations</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-btn color="primary" href="https://esr2-issuer.pathfinder.gov.bc.ca/" target="_blank">Add</v-btn>
+          <v-btn color="primary" href="https://esr2-issuer.apps.silver.devops.gov.bc.ca/" target="_blank">Add</v-btn>
         </v-toolbar>
 
         <v-data-table
